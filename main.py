@@ -4,13 +4,14 @@ def main():
     while (True):
         try:
             hexnum = hex(input())
-
             print(hexnum)
             print(hexnum.to_int())
 
             return False
         except Exception as e:
             print(e)
+            print("Введите корректные данные")
+
 
 
 if __name__ == '__main__':
