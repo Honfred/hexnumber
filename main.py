@@ -1,7 +1,7 @@
 from hexdecimal import hexadecimal as hex
 
 def main():
-    asd = hex([10, 4, 5, 10, 11, 2])
+    asd = hex(input())
     print(asd)
     print(asd.to_int())
 
