@@ -10,7 +10,6 @@ def main():
             return False
         except Exception as e:
             print(e)
-            print("Введите корректные данные")
 
 
 
