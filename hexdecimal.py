@@ -6,7 +6,16 @@ class hexadecimal():
 
     # преобразование из 16-ричной в 10-тичную
     def to_int(self) -> int:
-        return int(''.join(self.hex_digits), 16)
+        hex_digits = self.hex_digits
+        decimal_value = 0
+
+        for digit in hex_digits:
+            if digit.isdigit():
+                decimal_value = decimal_value * 16 + int(digit)
+            else:
+                decimal_value = decimal_value * 16 + ord(digit.upper()) - 55
+
+        return decimal_value
 
     # нормальный вывод 16-ричного числа
     def __str__(self) -> str:
