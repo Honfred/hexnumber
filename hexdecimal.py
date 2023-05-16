@@ -1,5 +1,5 @@
 class hexadecimal():
-    def __init__(self, hex_string:str):
+    def __init__(self, hex_string: str):
         if len(hex_string) >= 64:
             raise OverflowError("Длина числа не должна превышать 64 символов")
         self.hex_digits = list(hex_string.upper())
